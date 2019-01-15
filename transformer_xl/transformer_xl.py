@@ -114,7 +114,12 @@ if __name__ == '__main__':
     mems_placeholders = [tf.placeholder(tf.float32,
                            [mem_len, batch_size, d_model])
             for _ in range(n_layer)]
+
     '''
+    import numpy as np
+    init_mems = [np.zeros([mem_len, batch_size, d_model], dtype=np.float32)
+     for _ in range(n_layer)]
+     最开始使用iniy_mems填充mems_placeholders
     output, new_mems = transformer_xl(inp, mems_placeholders, n_token)
     feed_dict = {mems_placeholders:new_mems}
     '''
