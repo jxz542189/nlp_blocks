@@ -4,4 +4,5 @@
 2. https://github.com/hanxiao/tf-nlp-blocks
 3. https://github.com/taoshen58/ReSAN
 4. https://github.com/taoshen58/BiBloSA
+5. https://github.com/kimiyoung/transformer-xl/tree/master/tf
 
